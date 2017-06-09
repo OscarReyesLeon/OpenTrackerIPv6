@@ -1,21 +1,21 @@
-OpenTracker es un Tracker Torrent Abierto en IPv6
+OpenTrackerIPv6 is a Open Tracker Torrent on IPv6
 
-Esta es practicamente el programa original de Erdgeist, pero con un par de moficaciones listo para funcionar en IPv6
+This is pretty much the original Erdgeist program, but with a couple of motions ready to run on IPv6
 
-https://erdgeist.org/arts/software/opentracker/
-
-Aunque la parte de OpenTracker ya esta listo, aun falta hacer un par de moficicaciones.
+Install on Debian 8.
 
 
+# sudo su
 
+# cd /root && apt-get update && apt-get install make cvs zlib1g-dev libgtk2.0-dev git 
 
-Instalación en Debian 8.
-
-
-$ sudo su
-
-$ cd /root && apt-get update && apt-get install make cvs zlib1g-dev libgtk2.0-dev git 
-
-$ git clone https://github.com/OscarReyesLeon/OpenTrackerIPv6.git
+# git clone https://github.com/OscarReyesLeon/OpenTrackerIPv6.git
  
-$ cd OpenTrackerIPv6/ && chmod 777 install.sh && ./install.sh
+# cd OpenTrackerIPv6/ && chmod 777 install.sh && ./install.sh
+
+Finish.
+
+
+
+http://www.fefe.de/libowfatEn
+https://erdgeist.org/arts/software/opentracker/
