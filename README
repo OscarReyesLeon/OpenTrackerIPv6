@@ -1,4 +1,4 @@
-OpenTracker es un Tracker Torrent Abierto.
+OpenTracker es un Tracker Torrent Abierto en IPv6
 
 Esta es practicamente el programa original de Erdgeist, pero con un par de moficaciones listo para funcionar en IPv6
 
@@ -12,12 +12,10 @@ Aunque la parte de OpenTracker ya esta listo, aun falta hacer un par de moficica
 Instalación
 
 
+$ sudo su
 
+$ cd /root && apt-get update && apt-get install make cvs zlib1g-dev libgtk2.0-dev git 
 
- sudo su
-
- apt-get install make cvs zlib1g-dev libgtk2.0-dev git 
-
- git clone https://github.com/OscarReyesLeon/OpenTrackerIPv6.git
+$ git clone https://github.com/OscarReyesLeon/OpenTrackerIPv6.git
  
-chmod 777 up-opentracker.sh && cp up-opentracker.sh /etc/init.d/ && update-rc.d up-opentracker.sh defaults 
+$ cd OpenTrackerIPv6/ && chmod 777 install.sh && ./install.sh
