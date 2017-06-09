@@ -1,5 +1,4 @@
- #! /bin/bash
-cd /root 
+ #! /bin/bash 
 tput setaf 2
 echo Instalar OpenTrackerIPv6: Oscar Reyes Leon 
 sleep 5s
