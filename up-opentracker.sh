@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /root/opentracker
+cd /OpenTrackerIPv6/Tracker-IPv6
 ./opentracker -f opentracker.conf &
 disown
