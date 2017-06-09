@@ -2,6 +2,8 @@
 tput setaf 2
 echo Instalar OpenTrackerIPv6: Oscar Reyes Leon 
 sleep 5s
+tput setaf 3
+lsb_release -a
 tput setaf 4
 echo -.
 echo -.
@@ -73,6 +75,6 @@ echo Please wait.....
 echo Do not touch until restart....
 echo Por favor, espere a que se reinicie la maquina.
 tput setaf 3
-sleep 30s
+sleep 3s
 tput setaf 2
 shutdown -r now
