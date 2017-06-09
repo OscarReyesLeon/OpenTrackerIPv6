@@ -1,8 +1,15 @@
  #! /bin/bash
 
+ 
+tput setaf 2
+echo Cargando...
+tput setaf 4
+echo Loading......
+sleep 5s
+
 tput setaf 2
 echo Compilacion de libowfat
-tput setaf 5
+tput setaf 4
 echo Compilation of libowfat
 sleep 2s
 tput setaf 6
@@ -12,7 +19,7 @@ cd ..
 tput setaf 2
 echo Se termina de compilar libowfat
 echo Vamos a compilar OpenTrackerIPv6
-tput setaf 5
+tput setaf 4
 echo It finishes compiling libowfat
 echo Let is compile OpenTrackerIPv6
 sleep 5s
@@ -22,12 +29,12 @@ make
 cd ..
 tput setaf 2
 echo Se ha terminado de compilar OpenTrackerIPv6
-tput setaf 5
+tput setaf 4
 echo OpenTrackerIPv6 is finished compiling
 sleep 2s
 tput setaf 2
-echo Vamos a crear el inicio de la aplicacion (Daemon)
-tput setaf 5
+echo Vamos a crear el inicio de la aplicacion 
+tput setaf 4
 echo Let is create the start of the application
 tput setaf 6
 chmod 777 up-opentracker.sh && cp up-opentracker.sh /etc/init.d/ && update-rc.d up-opentracker.sh defaults 
@@ -40,7 +47,7 @@ tput setaf 2
 echo Ahora solo hay que reiniciar el servidor.
 tput setaf 3
 echo Gracias por instalar esta version, Oscar Reyes Leon.
-tput setaf 5
+tput setaf 4
 echo OpenTrackerIPv6 is now installed
 tput setaf 1
 echo Remember that the ports you can occupy is 443 and 6969 and it is recommended not to use UDP (Http only)
