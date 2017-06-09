@@ -1,5 +1,11 @@
  #! /bin/bash
+cd /root 
+tput setaf 2
 echo Instalar OpenTrackerIPv6: Oscar Reyes Leon 
+sleep 5s
+tput setaf 4
+echo -.
+echo -.
 tput setaf 2
 echo Cargando...
 tput setaf 4
@@ -62,8 +68,12 @@ tput setaf 2
 echo Now you just have to restart the server.
 tput setaf 3
 echo Thanks for installing this version, Oscar Reyes Leon.
-tput setaf 6
+tput setaf 1
 sleep 5s
-echo loading.....
-sleep 5s
-shutdown -r +1
+echo Please wait.....
+echo Do not touch until restart....
+echo Por favor, espere a que se reinicie la maquina.
+tput setaf 3
+sleep 30s
+tput setaf 2
+shutdown -r now
