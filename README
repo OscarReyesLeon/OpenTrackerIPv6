@@ -13,9 +13,10 @@ Install on Debian 8.
  
 # cd OpenTrackerIPv6/ && chmod 777 install.sh && ./install.sh
 
-Finish.
+Finish.  Default port is 443 and 6969
 
+https://youtu.be/DUNvZ4DMGdA
 
-
+Original Software.
 http://www.fefe.de/libowfatEn
 https://erdgeist.org/arts/software/opentracker/
