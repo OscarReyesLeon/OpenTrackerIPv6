@@ -5,3 +5,19 @@ Esta es practicamente el programa original de Erdgeist, pero con un par de mofic
 https://erdgeist.org/arts/software/opentracker/
 
 Aunque la parte de OpenTracker ya esta listo, aun falta hacer un par de moficicaciones.
+
+
+
+
+Instalación
+
+
+
+
+ sudo su
+
+ apt-get install make cvs zlib1g-dev libgtk2.0-dev git 
+
+ git clone https://github.com/OscarReyesLeon/OpenTrackerIPv6.git
+ 
+chmod 777 up-opentracker.sh && cp up-opentracker.sh /etc/init.d/ && update-rc.d up-opentracker.sh defaults 
