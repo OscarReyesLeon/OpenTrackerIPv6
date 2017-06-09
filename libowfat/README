@@ -1,30 +1,26 @@
-This is opentracker. An open bittorrent tracker.
+libowfat is a library of general purpose APIs extracted from Dan
+Bernstein's software, reimplemented and covered by the GNU General
+Public License Version 2 (no later versions).
 
-You need libowfat (http://www.fefe.de/libowfat/).
+The API has been slightly extended (for example, I provide a uint32_read
+function, and I extended the socket API to support IPv6) where I found
+it necessary or beneficial in a specific project.
 
-Steps to go:
+Many of the functions I implement here have since been placed in the
+public domain, so there are other sources to get this code (except for
+my extensions obviously).  The implementations here may not be as
+portable as the original versions; I tend to focus on the Single Unix
+Specification and not on some obsolete legacy systems found in the
+basements of some vintage hardware clubs.
 
-cvs -d :pserver:cvs@cvs.fefe.de:/cvs -z9 co libowfat
-cd libowfat
-make
-cd ..
-cvs -d:pserver:anoncvs@cvs.erdgeist.org:/home/cvsroot co opentracker
-cd opentracker
-make
-./opentracker
+I also provide man pages for many functions, mostly extracted from Dan's
+web documentation or documentation found in earlier versions of his
+software.  For some reason, he abandoned man pages in favor of HTML
+recently.
 
-This tracker is open in a sense that everyone announcing a torrent is welcome to do so and will be informed about anyone else announcing the same torrent. Unless
--DWANT_IP_FROM_QUERY_STRING is enabled (which is meant for debugging purposes only), only source IPs are accepted. The tracker implements a minimal set of
-essential features only but was able respond to far more than 10000 requests per second on a Sun Fire 2200 M2 (thats where we found no more clients able to fire
-more of our testsuite.sh script).
+On July 4 2002, Dan also placed his DNS routines and supporting
+low level functions in the public domain, so I copy them here instead of
+reimplementing them.  http://online.securityfocus.com/archive/1/280642
+has an online version of the bugtraq posting.
 
-Some tweaks you may want to try under FreeBSD:
-
-sysctl kern.ipc.somaxconn=1024
-sysctl kern.ipc.nmbclusters=32768
-sysctl net.inet.tcp.msl=10000
-sysctl kern.maxfiles=10240
-
-License information:
-
-Although the libowfat library is under GPL, Felix von Leitner agreed that the compiled binary may be distributed under the same beer ware license as the source code for opentracker. However, we like to hear from happy customers.
+The author can be reached under felix-libowfat@fefe.de
