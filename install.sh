@@ -11,7 +11,7 @@ tput setaf 2
 echo Compilacion de libowfat
 tput setaf 4
 echo Compilation of libowfat
-sleep 2s
+sleep 5s
 tput setaf 6
 cd libowfat/
 make
@@ -31,7 +31,7 @@ tput setaf 2
 echo Se ha terminado de compilar OpenTrackerIPv6
 tput setaf 4
 echo OpenTrackerIPv6 is finished compiling
-sleep 2s
+sleep 5s
 tput setaf 2
 echo Vamos a crear el inicio de la aplicacion 
 tput setaf 4
@@ -41,8 +41,10 @@ chmod 777 up-opentracker.sh && cp up-opentracker.sh /etc/init.d/ && update-rc.d 
 tput setaf 2
 echo OpenTrackerIPv6 se ha terminado de instalar
 tput setaf 1
-echo Recuerde que los puertos que usted puede ocupar es el 443 y el 6969 y se recomienda no usar UDP (Solo http)
-echo El servidor debe tener la IPv6 configurada y puede responder en IPv4 Y en IPv6 (aunque en realidad est echo para IPv6)
+echo Recuerde que los puertos que usted puede ocupar es el 443 y el 6969 y se recomienda no usar UDP
+echo Solo http y como ejemplo puede ser http://trackerweb.com:443/announce
+echo El servidor debe tener la IPv6 configurada y puede responder en IPv4 Y en IPv6 
+echo aunque en realidad esta echo para IPv6
 tput setaf 2
 echo Ahora solo hay que reiniciar el servidor.
 tput setaf 3
@@ -50,11 +52,16 @@ echo Gracias por instalar esta version, Oscar Reyes Leon.
 tput setaf 4
 echo OpenTrackerIPv6 is now installed
 tput setaf 1
-echo Remember that the ports you can occupy is 443 and 6969 and it is recommended not to use UDP (Http only)
-echo The server must have IPv6 configured and can respond in IPv4 and IPv6 (although it is actually IPv6)
+echo Remember that the ports you can occupy is 443 and 6969 and it is recommended not to use UDP 
+echo Only use http For example  http://trackerweb.com:443/announce    
+echo The server must have IPv6 configured and can respond in IPv4 and IPv6 
+echo although it is actually IPv6
 tput setaf 2
 echo Now you just have to restart the server.
 tput setaf 3
 echo Thanks for installing this version, Oscar Reyes Leon.
 tput setaf 6
+sleep 5s
+echo loading.....
+sleep 5s
 shutdown -r +1
