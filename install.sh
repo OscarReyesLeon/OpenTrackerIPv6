@@ -5,13 +5,13 @@ tput setaf 2
 echo Cargando...
 tput setaf 4
 echo Loading......
-sleep 5s
+sleep 2s
 
 tput setaf 2
 echo Compilacion de libowfat
 tput setaf 4
 echo Compilation of libowfat
-sleep 5s
+sleep 8s
 tput setaf 6
 cd libowfat/
 make
