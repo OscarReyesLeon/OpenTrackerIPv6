@@ -19,7 +19,6 @@ tput setaf 4
 echo Compilation of libowfat
 sleep 8s
 tput setaf 6
-apt-get install htop
 cd libowfat/
 make
 cd ..
